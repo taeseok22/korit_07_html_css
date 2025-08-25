@@ -1,0 +1,14 @@
+/* li {
+  border-bottom: 1px solid black;
+}
+li:last-child {
+  border-bottom: none;
+} */
+
+/* li:not(:last-child) {
+  border-bottom: 1px solid black;
+} */
+
+li:not(:first-child) {    /* nth-child(1)로 고쳐써도 상관이 없다. */
+  border-top: 1px solid black;
+}
