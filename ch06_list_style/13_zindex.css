@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+div {
+  width: 300px;
+  height: 80px;
+  background-color: skyblue;
+  /* 텍스트 중앙 위치 */
+  text-align: center; /*x축*/
+  line-height: 80px;
+  /* y축 : div의 높이가 80px이지만 line-height도 동일하게 잡아야 합니다. 
+  padding을 쓰셨다면 그것도 좋은 방법입니다.
+  */
+  position: fixed;
+  top: calc(50% - 40px);
+  left: calc(50% - 150px);
+  /*
+    이상의 부분은 특정 태그가 브라우저의 크기와 상관없이 정중앙에 위치하는 것을 담보하는 코드입니다.
+
+    자주 나옵니다. 
+  */
+}
+/* text도 div 내부의 중간에 위치시키고, div도 브라우저의 중간에 위치시키세요. 
+
+힌트 : calc() 함수 사용
+
+*/
